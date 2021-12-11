@@ -9,7 +9,7 @@ module.exports = {
     'airbnb-typescript',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking'
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -18,12 +18,27 @@ module.exports = {
     },
     ecmaVersion: 13,
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: [
     'react',
     '@typescript-eslint',
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function', // 'function-declaration' | 'function-expression' | 'arrow-function'
+      },
+    ],
   },
+  overrides: [
+    {
+      files: ['**/vite.config.ts'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
 };
