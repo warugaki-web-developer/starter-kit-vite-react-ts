@@ -51,5 +51,12 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
       },
     },
+    {
+      files: ['**/*.stories.*'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
   ],
 };
