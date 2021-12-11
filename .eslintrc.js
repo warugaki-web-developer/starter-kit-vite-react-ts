@@ -5,8 +5,11 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
