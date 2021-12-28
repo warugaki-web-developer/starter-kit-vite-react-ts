@@ -27,7 +27,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
@@ -44,9 +44,19 @@ export const Button = ({
         ' ',
       )}
       style={{ backgroundColor }}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
     >
       {label}
     </button>
   );
 };
+
+Button.defaultProps = {
+  primary: true,
+  size: 'medium',
+  backgroundColor: 'transparent',
+  onClick: () => null,
+};
+
+export default Button;
