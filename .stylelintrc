@@ -9,7 +9,20 @@
     {
       "files": ["**/*.jsx", "**/*.tsx"],
       "rules": {
-        "no-empty-first-line": null
+        "value-keyword-case": [
+          "lower",
+          {
+            "ignoreKeywords": ["/.*/"],
+            "ignoreProperties": ["/.*/"],
+            "ignoreFunctions": ["/.*/"]
+          }
+        ],
+        "function-name-case": [
+          "lower",
+          {
+            "ignoreFunctions": ["/.*/"]
+          }
+        ]
       },
       "customSyntax": "@stylelint/postcss-css-in-js"
     }

@@ -12,6 +12,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -50,6 +51,20 @@ module.exports = {
       rules: {
         'import/no-extraneous-dependencies': 'off',
       },
+    },
+    {
+      files: ['**/*.jsx', '**/*.tsx'],
+      // rules: {
+      //   '@typescript-eslint/ban-types': [
+      //     'error',
+      //     {
+      //       extendDefaults: true,
+      //       types: {
+      //         '{}': false,
+      //       },
+      //     },
+      //   ],
+      // },
     },
     {
       files: ['**/*.stories.*'],
