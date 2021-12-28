@@ -54,17 +54,17 @@ module.exports = {
     },
     {
       files: ['**/*.jsx', '**/*.tsx'],
-      rules: {
-        '@typescript-eslint/ban-types': [
-          'error',
-          {
-            extendDefaults: true,
-            types: {
-              '{}': false,
-            },
-          },
-        ],
-      },
+      // rules: {
+      //   '@typescript-eslint/ban-types': [
+      //     'error',
+      //     {
+      //       extendDefaults: true,
+      //       types: {
+      //         '{}': false,
+      //       },
+      //     },
+      //   ],
+      // },
     },
     {
       files: ['**/*.stories.*'],
