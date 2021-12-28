@@ -26,7 +26,7 @@ const style = css`
 `;
 const HelloWorld = ({ text }: HelloWorldProps) => (
   <div css={style}>
-    <h1 className="title">Vite + React + Storybook</h1>
+    <h1 className="title">Vite + React + TypeScript + Storybook</h1>
     <p className="read">hello {text}!!</p>
   </div>
 );
