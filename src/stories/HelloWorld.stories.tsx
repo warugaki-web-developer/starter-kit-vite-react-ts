@@ -16,8 +16,8 @@ const Template: ComponentStory<typeof HelloWorld> = (args) => (
   <HelloWorld {...args} />
 );
 
-export const normal = Template.bind({});
+export const Normal = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-normal.args = {
+Normal.args = {
   text: 'World',
 };
