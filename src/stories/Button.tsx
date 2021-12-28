@@ -53,9 +53,9 @@ const Button = ({
 };
 
 Button.defaultProps = {
-  primary: true,
+  primary: false,
   size: 'medium',
-  backgroundColor: 'transparent',
+  backgroundColor: '',
   onClick: () => null,
 };
 
