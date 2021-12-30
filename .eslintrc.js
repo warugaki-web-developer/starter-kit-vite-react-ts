@@ -26,6 +26,12 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'unused-imports'],
   rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true, // devDependenciesのimportを許可
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
       'error',
@@ -46,12 +52,6 @@ module.exports = {
     ],
   },
   overrides: [
-    {
-      files: ['**/vite.config.ts'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
     {
       files: ['**/*.jsx', '**/*.tsx'],
       // rules: {
