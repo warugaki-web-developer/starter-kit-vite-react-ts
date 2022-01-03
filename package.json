@@ -9,8 +9,8 @@
     "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.jsx,.ts,.tsx",
     "lint:stylelint": "stylelint ./src/**/*.{css,jsx,.tsx}",
     "fix:stylelint": "stylelint --fix ./src/**/*.{css,jsx,.tsx}",
-    "lint:prettier": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
-    "fix:prettier": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
+    "lint:prettier": "prettier --check --ignore-path .gitignore \"!package-lock.json\" './**/*.{js,jsx,ts,tsx,json,css}'",
+    "fix:prettier": "prettier --write --ignore-path .gitignore \"!package-lock.json\" './**/*.{js,jsx,ts,tsx,json,css}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
