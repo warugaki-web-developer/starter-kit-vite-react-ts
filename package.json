@@ -11,6 +11,8 @@
     "fix:stylelint": "stylelint --fix ./src/**/*.{css,jsx,.tsx}",
     "lint:prettier": "prettier --check --ignore-path .gitignore \"!package-lock.json\" './**/*.{js,jsx,ts,tsx,json,css}'",
     "fix:prettier": "prettier --write --ignore-path .gitignore \"!package-lock.json\" './**/*.{js,jsx,ts,tsx,json,css}'",
+    "lint:all": "run-s lint:eslint lint:stylelint lint:prettier",
+    "fix:all": "run-s fix:eslint fix:stylelint fix:prettier",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
