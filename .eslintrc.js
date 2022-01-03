@@ -25,6 +25,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['react', '@typescript-eslint', 'unused-imports'],
+  ignorePatterns: ['.eslintrc.*', 'vite.config.*'],
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
