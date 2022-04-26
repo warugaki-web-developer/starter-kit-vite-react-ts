@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { Button } from '@mui/material';
 
 type HelloWorldProps = {
   text: string;
@@ -27,6 +28,7 @@ const style = css`
 const HelloWorld = ({ text }: HelloWorldProps) => (
   <div css={style}>
     <h1 className="title">Vite + React + TypeScript + Storybook</h1>
+    <Button variant="contained">Help</Button>
     <p className="read">hello {text}!!</p>
   </div>
 );
